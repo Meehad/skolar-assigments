@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="style/Assignment_10.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Responsive Images</h1>
+    </header>
+    <main class="main-content">
+        <section class="section">
+            <h2>Example Image</h2>
+            <picture>
+                <source srcset="../images/rma25-large.jpeg" media="(min-width: 1200px)">
+                <source srcset="../images/rma25-medium.jpeg" media="(min-width: 600px)">
+                <img src="../images/rma25-small.jpeg" alt="Responsive example image" class="responsive-img">
+            </picture>
+            <p>This image adjusts based on the screen width.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Responsive Images. All rights reserved.</p>
+    </footer>
+</body>
+</html>
