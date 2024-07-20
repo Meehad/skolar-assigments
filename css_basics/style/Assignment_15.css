@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.section {
+    margin-bottom: 1rem;
+}
+
+/* Card styles for better layout */
+.card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Transform Box Base Styles */
+.transform-box {
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #3498db;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+/* Translate Transform */
+.translate {
+    transform: translateX(50px);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.scale {
+    transform: scale(1.5);
+}
+
+.skew {
+    transform: skewX(20deg);
+}
+
+.combined {
+    transform: translateX(50px) rotate(45deg) scale(1.5) skewX(20deg);
+}
+
+.footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
