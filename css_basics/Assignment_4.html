@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            line-height: 150px;
+            margin: 10px 0;
+        }
+        
+        .padding-box {
+            padding: 20px;
+        }
+        
+        .border-box {
+            border: 5px solid #3498db;
+        }
+        
+        .margin-box {
+            margin: 20px 0;
+        }
+        
+        .content-box-model {
+            box-sizing: content-box;
+            width: 150px;
+            padding: 20px;
+            border: 5px solid #3498db;
+        }
+        
+        .border-box-model {
+            box-sizing: border-box;
+            width: 150px;
+            padding: 20px;
+            border: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+
+    <div class="section">
+        <h2>Padding</h2>
+        <div class="box padding-box">Padding</div>
+        <p>Padding adds space inside the element, between the content and the border.</p>
+    </div>
+
+    <div class="section">
+        <h2>Border</h2>
+        <div class="box border-box">Border</div>
+        <p>Border adds a line around the element. You can set the width, style, and color of the border.</p>
+    </div>
+
+    <div class="section">
+        <h2>Margin</h2>
+        <div class="box margin-box">Margin</div>
+        <p>Margin adds space outside the element, between the element and its neighboring elements.</p>
+    </div>
+
+    <div class="section">
+        <h2>Box-Sizing: Content-Box</h2>
+        <div class="content-box-model">Content-Box</div>
+        <p>In the content-box model, the width and height properties (150px) include only the content. Padding and border are added to the outside of the box.</p>
+    </div>
+
+    <div class="section">
+        <h2>Box-Sizing: Border-Box</h2>
+        <div class="border-box-model">Border-Box</div>
+        <p>In the border-box model, the width and height properties (150px) include the content, padding, and border. This can help with consistent sizing.</p>
+    </div>
+</body>
+</html>
