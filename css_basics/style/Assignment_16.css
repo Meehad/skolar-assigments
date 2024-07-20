@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.section {
+    margin-bottom: 1rem;
+}
+
+/* Button styles with pseudo-classes */
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn:active {
+    background-color: #1f5f8a;
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 2px solid #1f5f8a;
+    outline-offset: 2px;
+}
+
+/* List styles with pseudo-classes */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    margin: 0.5rem 0;
+}
+
+.list li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.list li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Pseudo-elements */
+.box {
+    background-color: #3498db;
+    padding: 2rem;
+    color: white;
+    position: relative;
+    width: 300px;
+    height: 150px;
+}
+
+.box::before {
+    content: "★";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+.box::after {
+    content: "☆";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #f39c12;
+}
+
+.text {
+    margin: 0;
+}
+
+.footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
