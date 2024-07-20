@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.static {
+    background-color: #2ecc71;
+    color: white;
+    padding: 1rem;
+}
+
+.relative {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.relative-child {
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-container {
+    position: relative;
+    background-color: #f39c12;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: #9b59b6;
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed {
+    background-color: #1abc9c;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sticky {
+    background-color: #e67e22;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.spacer {
+    height: 1000px;
+}
+
+.footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
